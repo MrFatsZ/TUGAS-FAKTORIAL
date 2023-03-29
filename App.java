@@ -1,0 +1,33 @@
+import java.net.SocketImpl;
+import java.util.Scanner;
+
+import javax.sound.midi.Soundbank;
+public class App {
+    public static void main(String[] args) throws Exception {
+    int qw;
+    boolean e = true;
+    while (e){
+    Scanner az = new Scanner(System.in);
+    System.out.print("Masukan Angka (0 untuk berhenti ):");
+    qw = az.nextInt();
+    if (qw == 0){
+    e = false;
+    System.out.println("trimakasi telah menggunakan progam ini.");
+}
+int ba = qw;
+System.out.print(qw + "! = ");
+for(int a = qw; a > 0; a--){
+   System.out.print(a); 
+   if(a > 1){
+    System.out.print(" x ");
+   }
+   if(qw !=a){
+ba *=a;
+   }
+ba *= a;
+}
+System.out.println("");
+System.out.println("= " +ba);
+    }
+}
+}
